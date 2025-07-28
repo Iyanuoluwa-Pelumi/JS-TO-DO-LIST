@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: rgb(25, 25, 25);
     color: white;
@@ -7,9 +13,13 @@ body {
     margin: 0 auto;
 }
 
+.main-content{
+    margin-bottom: 100px;
+}
+
 h1 {
     text-align: center;
-    margin-bottom: 50px;
+    margin: 50px 0;
     color: #f0f0f0;
 }
 
@@ -22,7 +32,7 @@ h1 {
 
 .input {
     padding: 0.5rem;
-    width: 300px;
+    width: 600px;
     border-radius: 5px;
 }
 
@@ -77,7 +87,7 @@ h1 {
     align-items: center;
     margin-top: 20px;
     padding: 8px 12px;
-    margin-left: 2.5rem;
+    
 }
 
 .clear-button {
@@ -140,6 +150,21 @@ h1 {
     padding: 0.1rem 0.5rem;
 }
 
+.footer {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    position: fixed;
+    padding: 20px 0;
+    background-color: rgb(20, 20, 20);
+    box-shadow: 0 -2px 4px rgba(0, 0, 0.1);
+}
+
+.copyright {
+    text-align: center;
+}
+
 @media (max-width: 600px) {
 
 
@@ -155,29 +180,27 @@ h1 {
 
     .input {
         padding: 0.5rem;
-        width: 200px;
+        width: 230px;
         border-radius: 5px;
     }
 
     .date-input {
-        width: 15px;
+        width: 30px;
     }
 
     .add-button {
         width: 60px;
     }
 
-
     .delete-container {
         display: block;
         padding: 8px 12px;
-        margin-left: 2.5rem;
     }
 
     .clear-restore-btn {
         display: flex;
         flex-direction: column-reverse;
-        gap: 0.5rem;
+        gap: 1rem;
     }
 
 }
