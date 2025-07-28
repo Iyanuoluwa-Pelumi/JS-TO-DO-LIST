@@ -1,0 +1,183 @@
+body {
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #f0f0f0;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input {
+    padding: 0.5rem;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.date-input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-button {
+    padding: 0.5rem;
+    width: 100px;
+    background-color: #28a745;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+/* Div created in JS */
+.content-container2 {
+    display: flex;
+    gap: 1rem
+}
+
+
+.delete-button {
+    padding: 0.5rem;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.todo-checkbox {
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.delete-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 8px 12px;
+    margin-left: 2.5rem;
+}
+
+.clear-button {
+    padding: 0.5rem;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.restore-button {
+    padding: 0.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.confirm-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-content {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #28a745;
+}
+
+.hidden {
+    display: none;
+}
+
+.confirm-yes {
+    cursor: pointer;
+    font-weight: 700;
+    color: black;
+    border-radius: 4px;
+    padding: 0.1rem 0.5rem;
+}
+
+.confirm-no {
+    cursor: pointer;
+    font-weight: 700;
+    color: black;
+    border-radius: 4px;
+    padding: 0.1rem 0.5rem;
+}
+
+@media (max-width: 600px) {
+
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .input-container {
+        display: flex;
+        margin-bottom: 20px;
+
+    }
+
+    .input {
+        padding: 0.5rem;
+        width: 200px;
+        border-radius: 5px;
+    }
+
+    .date-input {
+        width: 15px;
+    }
+
+    .add-button {
+        width: 60px;
+    }
+
+
+    .delete-container {
+        display: block;
+        padding: 8px 12px;
+        margin-left: 2.5rem;
+    }
+
+    .clear-restore-btn {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0.5rem;
+    }
+
+}
