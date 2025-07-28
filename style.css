@@ -197,6 +197,10 @@ h1 {
         padding: 8px 12px;
     }
 
+    p{
+        margin-bottom: 0.7rem;
+    }
+
     .clear-restore-btn {
         display: flex;
         flex-direction: column-reverse;
