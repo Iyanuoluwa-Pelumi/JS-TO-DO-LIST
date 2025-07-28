@@ -180,16 +180,16 @@ h1 {
 
     .input {
         padding: 0.5rem;
-        width: 230px;
+        width: 240px;
         border-radius: 5px;
     }
 
     .date-input {
-        width: 30px;
+        width: 35px;
     }
 
     .add-button {
-        width: 60px;
+        width: 50px;
     }
 
     .delete-container {
