@@ -9,7 +9,7 @@ body {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -18,6 +18,7 @@ body {
 }
 
 h1 {
+    font-size: 3rem;
     text-align: center;
     margin: 50px 0;
     color: #f0f0f0;
@@ -31,21 +32,22 @@ h1 {
 }
 
 .input {
-    padding: 0.5rem;
+    padding: 1rem;
     width: 600px;
     border-radius: 5px;
 }
 
 .date-input {
-    padding: 0.5rem;
+    padding: 1rem;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .add-button {
-    padding: 0.5rem;
+    padding: 1rem;
     width: 100px;
     background-color: #28a745;
+    color: white;
     cursor: pointer;
     border-radius: 5px;
     font-weight: 700;
@@ -54,12 +56,13 @@ h1 {
 /* Div created in JS */
 .content-container2 {
     display: flex;
-    gap: 1rem
+    gap: 1rem;
+    align-items: center;
 }
 
 
 .delete-button {
-    padding: 0.5rem;
+    padding: 1rem;
     background-color: red;
     color: white;
     border: none;
@@ -91,7 +94,7 @@ h1 {
 }
 
 .clear-button {
-    padding: 0.5rem;
+    padding: 1rem;
     background-color: red;
     color: white;
     border: none;
@@ -101,7 +104,7 @@ h1 {
 }
 
 .restore-button {
-    padding: 0.5rem;
+    padding: 1rem;
     background-color: #007bff;
     color: white;
     border: none;
@@ -139,7 +142,9 @@ h1 {
     font-weight: 700;
     color: black;
     border-radius: 4px;
-    padding: 0.1rem 0.5rem;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    margin-top: 20px;
 }
 
 .confirm-no {
@@ -147,7 +152,8 @@ h1 {
     font-weight: 700;
     color: black;
     border-radius: 4px;
-    padding: 0.1rem 0.5rem;
+    padding: 0.5rem 1rem;
+    margin-top: 20px;
 }
 
 .footer {
@@ -165,9 +171,17 @@ h1 {
     text-align: center;
 }
 
+/* TAB */
+
+@media (max-width: 1024px) {
+    .input {
+        width: 300px;
+    }
+}
+
+/* MOBILE PHONE */
+
 @media (max-width: 600px) {
-
-
     h1 {
         margin-bottom: 20px;
     }
@@ -179,17 +193,15 @@ h1 {
     }
 
     .input {
-        padding: 0.5rem;
-        width: 240px;
-        border-radius: 5px;
+        width: 200px;
     }
 
     .date-input {
-        width: 35px;
+        width: 45px;
     }
 
     .add-button {
-        width: 50px;
+        width: 60px;
     }
 
     .delete-container {
