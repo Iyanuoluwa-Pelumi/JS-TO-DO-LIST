@@ -54,6 +54,11 @@ h1 {
 }
 
 /* Div created in JS */
+
+.content-container {
+    display: flex;
+    align-items: center;
+}
 .content-container2 {
     display: flex;
     gap: 1rem;
@@ -192,8 +197,15 @@ h1 {
 
     }
 
+    .input-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
     .input {
-        width: 200px;
+        width: 250px;
     }
 
     .date-input {
