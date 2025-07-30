@@ -178,7 +178,7 @@ h1 {
 
 /* TAB */
 
-@media (max-width: 780px) {
+@media (max-width: 1024px) {
     .input {
         width: 400px;
     }
@@ -186,7 +186,7 @@ h1 {
 
 /* MOBILE PHONE */
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     h1 {
         margin-bottom: 20px;
     }
@@ -198,13 +198,13 @@ h1 {
 
     .input-container {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
         margin-bottom: 20px;
     }
 
     .input {
-        width: 228px;
+        width: 220px;
     }
 
     .date-input {
