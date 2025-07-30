@@ -19,6 +19,10 @@ todo.addEventListener('click', function () {
         todoList.push({ name: name, completed: false, dueDate: dueDateValue }); // Add the new todo item to the array
         localStorage.setItem('todoList', JSON.stringify(todoList)); // Save to localStorage after adding
     }
+
+    if (!dueDateInput.value) {
+        alert('Please enter a date') //makes the date input required
+    }
     //RESET THE INPUT FIELD AFTER ADDING
     inputElement.value = '';
     dueDateInput.value = ''; 
