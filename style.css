@@ -176,8 +176,13 @@ h1 {
     text-align: center;
 }
 
+/* LARGE LAPTOP */
+@media (max-width: 2560px){
+.input {
+    width: 2000px;
+    }
+}
 /* TAB */
-
 @media (max-width: 1024px) {
     .input {
         width: 400px;
@@ -198,13 +203,13 @@ h1 {
 
     .input-container {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         margin-bottom: 20px;
     }
 
     .input {
-        width: 220px;
+        width: 250px;
     }
 
     .date-input {
@@ -232,7 +237,8 @@ h1 {
 
 }
 
-@media (max-width: 350px){
+/* MOBILE SMALLER PHONE */
+@media (max-width: 400px){
 
     .input-container {
         display: block;
@@ -245,6 +251,6 @@ h1 {
     }
 
     .input {
-        width: 220px;
+        width: 230px;
     }
 }
