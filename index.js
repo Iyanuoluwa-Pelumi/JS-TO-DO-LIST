@@ -15,15 +15,19 @@ todo.addEventListener('click', function () {
     let dueDateInput = document.querySelector('.date-input');
     let dueDateValue = dueDateInput.value; 
     
-    if (name !== '') {
-        todoList.push({ name: name, completed: false, dueDate: dueDateValue }); // Add the new todo item to the array
-        localStorage.setItem('todoList', JSON.stringify(todoList)); // Save to localStorage after adding
+    if (name === '') {
+        alert('Please enter a task.') //makes the task input required
+        return;
     }
 
-    if (!dueDateInput.value) {
+    if (dueDateInput.value === '') {
         alert('Please enter a date.') //makes the date input required
         return;
     }
+
+    todoList.push({ name: name, completed: false, dueDate: dueDateValue }); // Add the new task/date to the array
+    localStorage.setItem('todoList', JSON.stringify(todoList)); // Save to localStorage after adding
+    
     //RESET THE INPUT FIELD AFTER ADDING
     inputElement.value = '';
     dueDateInput.value = ''; 
@@ -167,6 +171,7 @@ restoreButton.addEventListener('click', function () {
         alert('No backup found to restore.');
     }
 });
+
 
 // Render existing list on page load
 renderList();

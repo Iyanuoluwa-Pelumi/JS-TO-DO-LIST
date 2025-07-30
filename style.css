@@ -178,15 +178,15 @@ h1 {
 
 /* TAB */
 
-@media (max-width: 1024px) {
+@media (max-width: 780px) {
     .input {
-        width: 300px;
+        width: 400px;
     }
 }
 
 /* MOBILE PHONE */
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     h1 {
         margin-bottom: 20px;
     }
@@ -194,18 +194,17 @@ h1 {
     .input-container {
         display: flex;
         margin-bottom: 20px;
-
     }
 
     .input-container {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
         margin-bottom: 20px;
     }
 
     .input {
-        width: 220px;
+        width: 228px;
     }
 
     .date-input {
@@ -231,4 +230,21 @@ h1 {
         gap: 1rem;
     }
 
+}
+
+@media (max-width: 350px){
+
+    .input-container {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .add-button {
+        margin-top: 0.5rem;
+        width: 60px;
+    }
+
+    .input {
+        width: 220px;
+    }
 }
