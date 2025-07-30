@@ -58,6 +58,7 @@ h1 {
 .content-container {
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 .content-container2 {
     display: flex;
@@ -185,7 +186,6 @@ h1 {
 }
 
 /* MOBILE PHONE */
-
 @media (max-width: 600px) {
     h1 {
         margin-bottom: 20px;
@@ -235,6 +235,9 @@ h1 {
 /* MOBILE SMALLER PHONE */
 @media (max-width: 400px){
 
+    h1{
+        font-size: 1.5rem;
+    }
     .input-container {
         display: block;
         margin-bottom: 20px;
