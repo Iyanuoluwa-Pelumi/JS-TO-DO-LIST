@@ -176,12 +176,7 @@ h1 {
     text-align: center;
 }
 
-/* LARGE LAPTOP */
-@media (min-width: 2560px){
-.input {
-    width: 2000px;
-    }
-}
+
 /* TAB */
 @media (max-width: 1024px) {
     .input {
