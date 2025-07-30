@@ -177,7 +177,7 @@ h1 {
 }
 
 /* LARGE LAPTOP */
-@media (max-width: 2560px){
+@media (min-width: 2560px){
 .input {
     width: 2000px;
     }
