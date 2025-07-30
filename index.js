@@ -21,7 +21,8 @@ todo.addEventListener('click', function () {
     }
 
     if (!dueDateInput.value) {
-        alert('Please enter a date') //makes the date input required
+        alert('Please enter a date.') //makes the date input required
+        return;
     }
     //RESET THE INPUT FIELD AFTER ADDING
     inputElement.value = '';
