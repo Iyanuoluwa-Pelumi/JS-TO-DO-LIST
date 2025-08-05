@@ -90,6 +90,10 @@ h1 {
     margin-right: 1rem;
 }
 
+.completed .text-item {
+    text-decoration: line-through; /* completed from JS checkbox */
+}
+
 .delete-container {
     display: flex;
     justify-content: space-between;
@@ -180,18 +184,6 @@ h1 {
 
 /* TAB */
 @media (max-width: 1024px) {
-    .input {
-        width: 400px;
-    }
-}
-
-/* MOBILE PHONE */
-@media (max-width: 600px) {
-    h1 {
-        margin-bottom: 20px;
-        font-size: 2.5rem;
-    }
-
     .input-container {
         display: flex;
         margin-bottom: 20px;
@@ -206,6 +198,14 @@ h1 {
 
     .input {
         width: 250px;
+    }
+}
+
+/* MOBILE PHONE */
+@media (max-width: 600px) {
+    h1 {
+        margin-bottom: 20px;
+        font-size: 2.5rem;
     }
 
     .date-input {

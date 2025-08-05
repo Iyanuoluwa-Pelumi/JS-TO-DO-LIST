@@ -4,6 +4,11 @@
 // WHEN THE BUTTON IS CLICKED, GET THE VALUE FROM THE INPUT FIELD
 // ADD THE VALUE TO THE ARRAY
 
+// Initialize flatpickr on the date input <!--Added for the sake of iphone display that does not fully support styling <input type="date"> -->
+    flatpickr(".date-input", {
+        dateFormat: "d/m/Y"  // Format as DD/MM/YYYY
+    });
+
 let todoList = JSON.parse(localStorage.getItem('todoList')) || [];
 
 let todo = document.querySelector('.add-button');
@@ -55,13 +60,14 @@ function renderList() {
             } else {
                 listItem.classList.remove('completed');
             }
+        
         });
 
         let listItem = document.createElement('li'); // creates HTML for the list item
         listItem.classList.add('list-item');
         
         if (item.completed) {
-            listItem.classList.add('completed'); // Add completed class if needed
+            listItem.classList.add('completed');
         }
         
         // Creates span for text
